@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-screen">
+        <div class="home-screen">
+            <div class="image">
+                <img src="images/dices.png" alt="" class="responsive">
+            </div>
+
+            <div class="play">
+                <h1 class="play-heading">Dice Game</h1>
+                <div class="btn-container">
+                    <button class="play-btn">Start Game</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-screen">
+
+            <div class="game-navbar">
+                <div class="game-score">
+                    <h1 class="game-heading">0</h1>
+                    <p class="para">Your Score</p>
+                </div>
+
+                <div class="game-button">
+                    <button onclick="chooseNumber(1)" class="game-btn">1</button>
+                    <button onclick="chooseNumber(2)" class="game-btn">2</button>
+                    <button onclick="chooseNumber(3)" class="game-btn">3</button>
+                    <button onclick="chooseNumber(4)" class="game-btn">4</button>
+                    <button onclick="chooseNumber(5)" class="game-btn">5</button>
+                    <button onclick="chooseNumber(6)" class="game-btn">6</button>
+
+                    <p>Select a number</p>
+                    <p>Selected Number: <span id="selectedNumber">None</span></p>
+                </div>
+            </div>
+
+            <div class="play-area">
+
+                <img src="images/dice/dice_1.png" id="dice" alt="" height="100" width="100" onclick="changeImage()">
+
+                <p class="play-para">click on the dice to roll!</p>
+
+                <div class="play-buttons">
+                    <div class="reset">Reset Score</div>
+                    <div class="rules">Show Rules</div>
+                </div>
+
+                <div class="rule-box">
+                    <p>1. click on any one of the button on the top right</p>
+                    <p>2. Then click on the dice to roll it</p>
+                    <p>3. If dice's number and the number you choose are same then your score will be incresed else it
+                        get decresed</p>
+
+                    <button class="close">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
