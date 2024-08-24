@@ -31,7 +31,8 @@ body {
     align-items: center;
     justify-content: space-evenly;
 
-    display: none;
+    /* display: none; */
+    display: flex;
 }
 
 .play-heading {
@@ -73,6 +74,7 @@ button {
 .game-screen {
     height: 100%;
     width: 100%;
+    display: none;
 }
 
 .game-navbar {

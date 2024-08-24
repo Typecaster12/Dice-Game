@@ -2,9 +2,11 @@
 //home screen
 let play_btn = document.querySelector('.play-btn');
 let home_screen = document.querySelector('.home-screen');
+let game_screen = document.querySelector('.game-screen');
 
 play_btn.addEventListener('click', () => {
     home_screen.style.display = 'none';
+    game_screen.style.display = 'block';
 });
 
 
