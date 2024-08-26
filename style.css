@@ -75,6 +75,7 @@ button {
     height: 100%;
     width: 100%;
     display: none;
+    position: relative;
 }
 
 .game-navbar {
@@ -165,3 +166,23 @@ img{
 #dice{
     pointer-events: none;
 }
+
+/* timer  */
+.timer{
+    display: flex;
+    /* align-items: center; */
+}
+
+.time{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* timer responsiveness */
+ @media (max-width: 550px) {
+    .timer{
+        position: absolute;
+        bottom: 20px;
+    }
+ }
